@@ -1,57 +1,57 @@
-# Decentralized Token Exchange
+# Intercambio Descentralizado de Tokens
 
-This project implements a decentralized exchange for swapping two tokens, inspired by Thorchain. It allows users to add liquidity, remove liquidity, and execute trades in a secure and efficient manner.
+Este proyecto implementa un intercambio descentralizado para el intercambio de dos tokens, inspirado en Thorchain. Permite a los usuarios agregar liquidez, retirar liquidez y ejecutar intercambios de manera segura y eficiente.
 
-## Project Structure
+## Estructura del Proyecto
 
 ```
-decentralized-exchange
+intercambio-descentralizado
 ├── src
-│   ├── token.js          # Main logic for the decentralized exchange
-│   ├── contracts
-│   │   └── exchange.sol  # Solidity smart contract for token swaps
+│   ├── token.js          # Lógica principal del intercambio descentralizado
+│   ├── contratos
+│   │   └── exchange.sol  # Contrato inteligente en Solidity para el intercambio de tokens
 │   ├── scripts
-│   │   └── deploy.js     # Script to deploy the smart contract
+│   │   └── deploy.js     # Script para desplegar el contrato inteligente
 │   └── tests
-│       └── exchange.test.js # Test cases for the smart contract
-├── package.json          # npm configuration file
-├── hardhat.config.js     # Hardhat configuration file
-└── README.md             # Project documentation
+│       └── exchange.test.js # Casos de prueba para el contrato inteligente
+├── package.json          # Archivo de configuración de npm
+├── hardhat.config.js     # Archivo de configuración de Hardhat
+└── README.md             # Documentación del proyecto
 ```
 
-## Setup Instructions
+## Instrucciones de Configuración
 
-1. **Clone the repository:**
+1. **Clonar el repositorio:**
    ```bash
    git clone <repository-url>
-   cd decentralized-exchange
+   cd intercambio-descentralizado
    ```
 
-2. **Install dependencies:**
+2. **Instalar dependencias:**
    ```bash
    npm install
    ```
 
-3. **Compile the smart contract:**
+3. **Compilar el contrato inteligente:**
    ```bash
    npx hardhat compile
    ```
 
-4. **Deploy the smart contract:**
+4. **Desplegar el contrato inteligente:**
    ```bash
-   npx hardhat run src/scripts/deploy.js --network <network-name>
+   npx hardhat run src/scripts/deploy.js --network <nombre-de-la-red>
    ```
 
-## Usage
+## Uso
 
-- **Swapping Tokens:** Use the functions in `src/token.js` to swap tokens.
-- **Adding Liquidity:** Interact with the smart contract to add liquidity.
-- **Removing Liquidity:** Use the provided functions to remove liquidity from the exchange.
+- **Intercambio de Tokens:** Usa las funciones en `src/token.js` para intercambiar tokens.
+- **Agregar Liquidez:** Interactúa con el contrato inteligente para agregar liquidez.
+- **Retirar Liquidez:** Usa las funciones disponibles para retirar liquidez del intercambio.
 
-## Examples
+## Ejemplos
 
 ```javascript
-// Example of swapping tokens
+// Ejemplo de intercambio de tokens
 const { swapTokens } = require('./src/token');
 
 async function exampleSwap() {
@@ -62,6 +62,7 @@ async function exampleSwap() {
 exampleSwap();
 ```
 
-## License
+## Licencia
 
-This project is licensed under the MIT License.
+Este proyecto está licenciado bajo la Licencia MIT.
+
